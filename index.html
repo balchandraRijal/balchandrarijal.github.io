@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balchandra Rijal | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background-color 0.5s ease;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+    nav {
+      background-color: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: slideUp 1s ease-in-out;
+    }
+    h2 {
+	  background-color: #1e3a8a;
+	  text-align: center;
+      color: white;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    img.profile {
+	  display: block; 
+	  margin: 0 auto;
+      width: 150px;
+      border-radius: 50%;
+    }
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.07);
+    }
+	p{
+		text-align: justify;
+	}
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .profile {
+        width: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header style="background-color: #1e3a8a; color: white; padding: 20px; text-align: center;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <img src="C:\Users\dell\Downloads\balchandra_portfolio\Images\Passport Size Photo.jpg" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%;">
+    <div>
+      <h1 style="margin: 0; font-size: 28px;">Balchandra Rijal</h1>
+      <p style="margin: 5px 0 0;">Welcome to my personal website</p>
+    </div>
+  </div>
+</header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="C:\Users\dell\Downloads\balchandra_portfolio\Images\Passport Size Photo.jpg" alt="Profile" class="profile">
+    <p>
+	Hello! I'm <strong>Balchandra Rijal</strong>, a tech enthusiast from Nepal. 
+	I'm a passionate educator, freelancer, and government officer from Pokhara, Nepal, with a keen interest in technology, lifestyle, travel, personal growth, and education. 
+	At 25, I’ve dedicated my time to content writing and exploring new ideas, nature, and innovations that inspire change and spark curiosity.
+	<br><br><br>
+	This website is a space where I publish public interest topics—from tech trends to life lessons—with the aim of informing and empowering students, tech enthusiasts, and the general public.
+	<br><br><br>
+	This website is my online space to showcase who I am and what I do. Welcome to my journey of learning and sharing.
+	</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Web Development (HTML, CSS, JS)</li>
+      <li>IT Support and Networking</li>
+      <li>Problem Solving</li>
+      <li>Linux and System Administration</li>
+    </ul>
+  </section>
+
+  <section id="blog">
+  <h2 style="background-color: #1e3a8a; color: white; padding: 10px 20px; border-radius: 8px; text-align: center;">
+    Blog
+  </h2>
+  <ul style="list-style-type: decimal; padding-left: 20px;">
+    <li><a href="blog1.html" target="_blank" style="text-decoration: none; color: #1e3a8a; font-weight: bold;">Information Technology</a></li>
+    <li><a href="blog2.html" target="_blank" style="text-decoration: none; color: #1e3a8a; font-weight: bold;">Computer Related Learning</a></li>
+  </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Coming soon... This section will include some of my personal and professional IT projects.</p>
+  </section>
+  
+  <section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="C:\Users\dell\Downloads\balchandra_portfolio\Images\Passport Size Photo.jpg" alt="Sample 1">
+      <img src="C:\Users\dell\Downloads\balchandra_portfolio\Images\Passport Size Photo.jpg" alt="Sample 2">
+      <img src="C:\Users\dell\Downloads\balchandra_portfolio\Images\Passport Size Photo.jpg" alt="Sample 3">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:balchandrarijal@gmail.com">balchandrarijal@gmail.com</a></p>
+    <div class="social">
+      <a href="#">Facebook</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Balchandra Rijal. All rights reserved.
+  </footer>
+</body>
+</html>

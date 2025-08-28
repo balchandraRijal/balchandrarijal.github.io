@@ -17,6 +17,8 @@
       transition: background-color 0.5s ease;
       justify-content: center;
       align-items: center;
+	  justify-content: center;
+	  flex-direction: column;
       height: 100vh;
     }
     header {
@@ -113,30 +115,10 @@
     justify-content: center;
     gap: 20px;
   }
-  .social-icons a {
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  .social-icons a:hover { transform: scale(1.2); }
-  .facebook { background: #3b5998; }
-  .twitter { background: #1DA1F2; }
-  .instagram { background: #E4405F; }
-  .linkedin { background: #0077B5; }
-  .youtube { background: #FF0000; }
-  .github { background: #333; }
-	.email { background: #D44638; }
-	
+  
 	.feedback-container {
       background: #f8faff;
-      padding: 40px;
+      text-align: center;
 	  margin-left: 350px;
       border-radius: 15px;
       box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
@@ -163,12 +145,13 @@ label {
     }
 
 input, textarea {
-      width: 100%;
+      width: 90%;
       padding: 12px;
       border: 2px solid #007BFF;
       border-radius: 10px;
       font-size: 16px;
       transition: 0.3s;
+	  margin-left: 10px;
     }
 
     input:focus, textarea:focus {
@@ -195,6 +178,7 @@ textarea {
       transition: all 0.4s ease;
       position: relative;
       overflow: hidden;
+	  margin-bottom: 1%;
     }
 
     .btn-submit:hover {
@@ -219,7 +203,7 @@ textarea {
     <img src="https://raw.githubusercontent.com/balchandraRijal/Images-for-website/refs/heads/main/bcr.jpg" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%;">
     <div>
       <h1 style="margin: 0; font-size: 28px;">Balchandra Rijal</h1>
-      <p style="margin: 5px 0 0;">Welcome to my personal website</p>
+     
     </div>
   </div>
 </header>
@@ -229,18 +213,18 @@ textarea {
   </nav>
 
   <div class="feedback-container">
-    <h2>Give Me Your Valuable Feedback</h2>
+    <h2>Please, Give Me Your Valuable Feedback</h2>
     <form action="https://formspree.io/f/xrbabrdr" method="POST">
       <div class="form-group">
-        <label for="name">Name *</label>
+        <label for="name">&nbsp;&nbsp;Name *</label>
         <input type="text" id="name" name="name" required placeholder="Enter your name">
       </div>
       <div class="form-group">
-        <label for="email">Email *</label>
+        <label for="email">&nbsp;&nbsp;Email *</label>
         <input type="email" id="email" name="email" required placeholder="Enter your email">
       </div>
       <div class="form-group">
-        <label for="comments">Comments *</label>
+        <label for="comments">&nbsp;&nbsp;Feedbacks *</label>
         <textarea id="comments" name="comments" required placeholder="Write your feedback here..."></textarea>
       </div>
       <button type="submit" class="btn-submit">Submit Feedback</button>

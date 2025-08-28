@@ -5,132 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="websitestyle.css">
   <title>Balchandra Rijal | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
-      transition: background-color 0.5s ease;
-    }
-    header {
-      background-color: #1e3a8a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      animation: fadeIn 2s;
-    }
-    nav {
-      background-color: #1e40af;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffd700;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-      background-color: white;
-      margin-top: 20px;
-      border-radius: 10px;
-      animation: slideUp 1s ease-in-out;
-    }
-    h2 {
-	  background-color: #1e3a8a;
-	  text-align: center;
-      color: white;
-    }
-    footer {
-      background-color: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 20px;
-    }
-    img.profile {
-	  display: block; 
-	  margin: 0 auto;
-      width: 150px;
-      border-radius: 50%;
-    }
-    .social a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #1e3a8a;
-      font-weight: bold;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(50px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
-    .gallery img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
-      transition: transform 0.3s;
-    }
-    .gallery img:hover {
-      transform: scale(1.07);
-    }
-	p{
-		text-align: justify;
-	}
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-      .profile {
-        width: 100px;
-      }
-    }
-	  .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  .social-icons a {
-    text-decoration: none;
-    color: white;
-    font-size: 28px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: transform 0.3s ease, background 0.3s ease;
-  }
-  .social-icons a:hover { transform: scale(1.2); }
-  .facebook { background: #3b5998; }
-  .twitter { background: #1DA1F2; }
-  .instagram { background: #E4405F; }
-  .linkedin { background: #0077B5; }
-  .youtube { background: #FF0000; }
-  .github { background: #333; }
-	.email { background: #D44638; }
-  </style>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1205788931903011"
      crossorigin="anonymous"></script>
 </head>
@@ -148,10 +24,11 @@
   <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
+	<a href="#blog">Blog</a>
     <a href="#projects">Projects</a>
     <a href="#gallery">Gallery</a>
-    <a href="#blog">Blog</a>
     <a href="#contact">Contact</a>
+	<a href="feedback.html">Give Feedback</a>
   </nav>
 
   <section id="about">
@@ -219,5 +96,24 @@
   <footer>
     &copy; 2025 Balchandra Rijal. All rights reserved.
   </footer>
+  <!-- Back to Top Button -->
+<button id="backToTop" title="Back to Top">↑</button>
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // Show button only when user reaches bottom
+  window.addEventListener("scroll", () => {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+      backToTopBtn.style.display = "flex";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  // Scroll to top smoothly when clicked
+  backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 </body>
 </html>

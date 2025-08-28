@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Balchandra Rijal | Portfolio</title>
+  
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      transition: background-color 0.5s ease;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+    nav {
+      background-color: #1e40af;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      margin-top: 20px;
+      border-radius: 10px;
+      animation: slideUp 1s ease-in-out;
+    }
+    h2 {
+      color: #005f99;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+    img.profile {
+	  display: block; 
+	  margin: 0 auto;
+      width: 150px;
+      border-radius: 50%;
+    }
+    .social a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.07);
+    }
+	p{
+		text-align: justify;
+	}
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .profile {
+        width: 100px;
+      }
+    }
+	  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  .social-icons a:hover { transform: scale(1.2); }
+  .facebook { background: #3b5998; }
+  .twitter { background: #1DA1F2; }
+  .instagram { background: #E4405F; }
+  .linkedin { background: #0077B5; }
+  .youtube { background: #FF0000; }
+  .github { background: #333; }
+	.email { background: #D44638; }
+	
+	.feedback-container {
+      background: #f8faff;
+      padding: 40px;
+	  margin-left: 350px;
+      border-radius: 15px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+.form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #005f99;
+    }
+
+input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #007BFF;
+      border-radius: 10px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #005f99;
+      box-shadow: 0px 0px 8px rgba(0,123,255,0.4);
+    }
+
+textarea {
+      resize: none;
+      height: 100px;
+    }
+
+/* Animated Submit Button */
+    .btn-submit {
+      background-color: #005f99;
+      color: white;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-submit:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      box-shadow: 0px 6px 15px rgba(0,123,255,0.4);
+    }
+
+    .btn-submit:active {
+      transform: scale(0.95);
+    }
+	
+	.feedback-container {
+  margin-top: 10px; /* space below navbar */
+}
+  </style>
+ 
+</head>
+<body>
+  <header style="background-color: #1e3a8a; color: white; padding: 20px; text-align: center;">
+  <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+    <img src="https://raw.githubusercontent.com/balchandraRijal/Images-for-website/refs/heads/main/bcr.jpg" alt="Profile" style="width: 100px; height: 100px; border-radius: 50%;">
+    <div>
+      <h1 style="margin: 0; font-size: 28px;">Balchandra Rijal</h1>
+      <p style="margin: 5px 0 0;">Welcome to my personal website</p>
+    </div>
+  </div>
+</header>
+
+  <nav>
+    <a href="index.html">Get to Home</a>
+  </nav>
+
+  <div class="feedback-container">
+    <h2>Give Me Your Valuable Feedback</h2>
+    <form action="https://formspree.io/f/xrbabrdr" method="POST">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments *</label>
+        <textarea id="comments" name="comments" required placeholder="Write your feedback here..."></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Submit Feedback</button>
+    </form>
+  </div>
+	
+  <footer>
+    &copy; 2025 Balchandra Rijal. All rights reserved.
+  </footer>
+</body>
+</html>
